@@ -1,0 +1,242 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #276A8A;
+    border-color: #276A8A;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #1B4D65;
+    border-color: #1B4D65; /*set the color you want here*/
+}
+
+a {
+    color: #276A8A;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.bg-dark {
+    background-color: #1B4D65!important;
+}
+
+
+
+.cardBox {
+  float: left;
+  font-size: 1.0em;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: 23.7%;
+}
+
+.cardBox:hover .card {
+  transform: rotateY( 180deg);
+}
+
+.card {
+  background: #fff;
+  cursor: default;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 100%;
+  -webkit-animation: giro 1s 1;
+  animation: giro 1s 1;
+}
+
+.card p {
+  margin-bottom: 1.8em;
+}
+
+.card .front  {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 1em;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+.card .front strong {
+  background: #fff;
+  border-radius: 100%;
+  color: #222;
+  font-size: 1.2em;
+  line-height: 30px;
+  padding: 0 7px 4px 6px;
+}
+
+.card .back {
+  transform: rotateY( 180deg);
+}
+
+.card .back a {
+  padding: 0.3em 0.5em;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1px;
+  font-size: 0.9em;
+  transition: all 0.2s ease 0s;
+}
+
+.card .back a:hover {
+  background: #fff;
+  color: #333;
+  text-shadow: 0 0 1px #333;
+}
+
+.cardBox:nth-child(1) .card .back {
+  background: #276A8A;
+}
+
+.cardBox:nth-child(2) .card .back {
+  background: #276A8A;
+}
+
+.cardBox:nth-child(3) .card .back {
+  background: #276A8A;
+}
+
+.cardBox:nth-child(4) .card .back {
+  background: #276A8A;
+}
+
+.cardBox:nth-child(5) .card .back {
+  background: #276A8A;
+}
+
+.cardBox:nth-child(6) .card .back {
+  background: #276A8A;
+}
+
+.cardBox:nth-child(7) .card .back {
+  background: #276A8A;
+}
+
+.cardBox:nth-child(8) .card .back {
+  background: #276A8A;
+}
+.cardBox:nth-child(9) .card .back {
+  background: #276A8A;
+}
+.cardBox:nth-child(10) .card .back {
+  background: #276A8A;
+}
+.cardBox:nth-child(2) .card {
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+
+.cardBox:nth-child(3) .card {
+  -webkit-animation: giro 2s 1;
+  animation: giro 2s 1;
+}
+
+.cardBox:nth-child(4) .card {
+  -webkit-animation: giro 2.5s 1;
+  animation: giro 2.5s 1;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .card {
+    height: 285px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .card {
+    height: 260px;
+  }
+}
+
+.centered {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  transform: translate(-20%, -20%);
+  color: #000;
+    }
+	
+.ar {
+  text-align: right;
+   direction: rtl;
+  font-family: 'Tajawal', sans-serif;
+}
+.backcardtitle {
+	text-align: center;
+	padding-bottom: 0.5em;
+}
+
+
+
